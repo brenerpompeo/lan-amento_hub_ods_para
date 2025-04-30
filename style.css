@@ -1,0 +1,422 @@
+/* --- Reset Básico & Variáveis --- */
+:root {
+    --pacto-global-blue: #0055A4; /* Azul Oficial PG - AJUSTAR CONFORME MANUAL */
+    --fiepa-color: #008000;      /* Verde FIEPA - AJUSTAR CONFORME MANUAL */
+    --accent-color: #FDB913;     /* Cor de destaque (ex: Amarelo/Dourado) - AJUSTAR */
+    --text-dark: #333;
+    --text-light: #fff;
+    --bg-light: #f8f9fa;
+    --bg-medium: #e9ecef;
+    --font-primary: 'Arial', sans-serif; /* AJUSTAR: Usar Flama/Roboto/Lora */
+    --font-secondary: 'Georgia', serif; /* AJUSTAR: Usar Flama/Roboto/Lora */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Para rolagem suave dos links internos */
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Header / Hero Section --- */
+.hero {
+    background-color: var(--pacto-global-blue); /* Fundo com cor primária */
+    /* Ou usar imagem de fundo: */
+    /* background: linear-gradient(rgba(0, 85, 164, 0.8), rgba(0, 85, 164, 0.8)), url('[PLACEHOLDER_hero-background.jpg]') no-repeat center center/cover; */
+    color: var(--text-light);
+    text-align: center;
+    padding: 60px 0 40px;
+    min-height: 80vh; /* Garante altura mínima */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos-parceria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 15px; /* Espaço entre logos */
+}
+
+.logos-parceria .logo {
+    height: 50px; /* Ajustar tamanho */
+    width: auto;
+}
+.logos-parceria .plus-sign {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+
+.hero h1 {
+    font-family: var(--font-secondary); /* Fonte de destaque para o título */
+    font-size: 2.8em; /* Tamanho mobile-first */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--text-light);
+     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.hero h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    font-weight: normal;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    max-width: 550px;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+.event-date-highlight {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--accent-color);
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.event-date-highlight p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#countdown {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 5px;
+}
+
+.primary-cta {
+    background-color: var(--accent-color);
+    color: var(--pacto-global-blue); /* Contraste */
+}
+.primary-cta:hover {
+    background-color: #fdb913d9; /* Tom mais escuro do accent */
+    transform: translateY(-2px);
+}
+
+.secondary-cta {
+    background-color: var(--text-light);
+    color: var(--pacto-global-blue);
+    border: 1px solid var(--pacto-global-blue);
+}
+.secondary-cta:hover {
+     background-color: #eee;
+     transform: translateY(-2px);
+}
+
+.scroll-down {
+    display: block;
+    margin-top: 30px;
+    color: var(--accent-color);
+    font-size: 1em;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+.scroll-down:hover {
+    opacity: 1;
+}
+
+/* --- Seções Gerais --- */
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-family: var(--font-secondary);
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: var(--pacto-global-blue);
+}
+
+.section p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+    max-width: 800px; /* Limita largura do texto */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Centraliza parágrafos por padrão */
+}
+
+.section-highlight {
+    background-color: var(--bg-light);
+}
+
+.section-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto 0;
+    border-radius: 8px;
+    max-height: 400px; /* Limita altura da imagem */
+}
+
+/* --- Seção Parceria --- */
+.parceria-logos-desc {
+    text-align: center;
+}
+.logos-parceria-inline {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Mais espaço */
+    margin-bottom: 20px;
+}
+.logo-inline {
+    height: 60px; /* Tamanho maior */
+    width: auto;
+}
+.parceria-logos-desc p {
+    text-align: center;
+}
+
+
+/* --- Seção Benefícios --- */
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Começa com 1 coluna */
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.beneficio-card {
+    background-color: #fff;
+    border: 1px solid var(--bg-medium);
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.beneficio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-card img {
+    height: 50px; /* Ajustar tamanho do ícone */
+    margin-bottom: 15px;
+}
+
+.beneficio-card h3 {
+    font-family: var(--font-secondary);
+    color: var(--fiepa-color); /* Usa a cor da FIEPA como destaque */
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.beneficio-card p {
+    font-size: 0.95em;
+    text-align: center; /* Garante centralização */
+}
+
+
+/* --- Seção Quem Pode --- */
+#quem-pode p {
+    margin-bottom: 10px;
+}
+.disclaimer {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+/* --- Seção Evento --- */
+.evento-details {
+    background-color: #fff;
+    border: 1px solid var(--bg-medium);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; /* Alinha texto à esquerda aqui */
+}
+.evento-details p {
+    text-align: left;
+    margin-bottom: 8px;
+}
+.evento-details ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+.evento-details li {
+     margin-bottom: 5px;
+}
+
+#evento .cta-button {
+    display: block; /* Ocupa largura */
+    max-width: 300px;
+    margin: 20px auto 0;
+    text-align: center;
+    background-color: var(--fiepa-color);
+    color: var(--text-light);
+}
+#evento .cta-button:hover {
+     background-color: #006400; /* Verde mais escuro */
+}
+
+
+/* --- CTA Final --- */
+.section-cta-final {
+     background-color: var(--pacto-global-blue);
+     color: var(--text-light);
+}
+.section-cta-final h2 {
+    color: var(--text-light);
+}
+.section-cta-final p {
+    margin-bottom: 30px;
+}
+.cta-buttons-final {
+    display: flex;
+    flex-direction: column; /* Empilha botões no mobile */
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: var(--text-dark);
+    color: #ccc;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+.logos-footer {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.logo-footer {
+    height: 35px; /* Menor no footer */
+    width: auto;
+    opacity: 0.8;
+}
+footer p {
+    margin-bottom: 10px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Responsividade --- */
+
+/* Tablet */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3.5em;
+    }
+    .hero h2 {
+        font-size: 1.6em;
+    }
+    .hero p {
+        font-size: 1.15em;
+    }
+    .section h2 {
+        font-size: 2.6em;
+    }
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+    .cta-buttons-final {
+        flex-direction: row; /* Lado a lado */
+        justify-content: center;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+     .container {
+        width: 85%; /* Um pouco mais largo */
+    }
+     .hero {
+        padding: 80px 0 60px;
+    }
+    .hero h1 {
+        font-size: 4em;
+    }
+     .hero h2 {
+        font-size: 1.8em;
+    }
+    .section {
+        padding: 70px 0;
+    }
+     .section h2 {
+        font-size: 2.8em;
+        margin-bottom: 40px;
+    }
+     .section p {
+        font-size: 1.1em;
+    }
+    .beneficios-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+        gap: 30px;
+    }
+    .logos-parceria-inline {
+         gap: 40px;
+    }
+    .logo-inline {
+        height: 70px;
+    }
+     .evento-details {
+        padding: 40px;
+    }
+}
