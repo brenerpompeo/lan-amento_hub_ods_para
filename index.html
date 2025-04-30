@@ -4,141 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lançamento HUB ODS Pará - Pacto Global & FIEPA</title>
+    <!-- Importar Roboto do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importar Feather Icons (Exemplo de biblioteca open-source) -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- Link para CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Incluir link para fontes oficiais, se hospedadas externamente -->
+    <!-- !! IMPORTANTE: Adicionar aqui o link ou @font-face para a fonte FLAMA !! -->
+    <style>
+      /* Exemplo de como declarar Flama (ajustar path e nomes)
+      @font-face {
+          font-family: 'Flama';
+          src: url('fonts/Flama-Regular.woff2') format('woff2'),
+               url('fonts/Flama-Regular.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+      @font-face {
+          font-family: 'Flama';
+          src: url('fonts/Flama-Bold.woff2') format('woff2'),
+               url('fonts/Flama-Bold.woff') format('woff');
+          font-weight: bold;
+          font-style: normal;
+      }
+      */
+      /* Usar Flama onde definido no CSS, ex: h1, h2, .cta-button */
+      h1, h2, h3, .cta-button {
+          /* font-family: 'Flama', sans-serif; */ /* Descomentar quando Flama estiver carregada */
+           font-family: 'Roboto', sans-serif; /* Fallback enquanto Flama não está carregada */
+           font-weight: 700; /* Usar bold como exemplo para Flama Bold */
+      }
+      body{
+           font-family: 'Roboto', sans-serif; /* Fonte padrão para corpo */
+      }
+
+    </style>
 </head>
 <body>
 
     <header class="hero">
+         <div class="hero-overlay"></div> <!-- Overlay para contraste -->
         <div class="container">
             <div class="logos-parceria">
-                <img src="[PLACEHOLDER_logo-pacto-global-rede-brasil.png]" alt="Logo Pacto Global da ONU - Rede Brasil" class="logo logo-pg">
-                <span class="plus-sign">+</span>
-                <img src="[PLACEHOLDER_logo-fiepa.png]" alt="Logo FIEPA" class="logo logo-fiepa">
+                <!-- Usar SVGs sempre que possível para qualidade -->
+                <img src="https://www.pactoglobal.org.br/wp-content/uploads/2024/03/logo-pacto-color.svg" alt="Logo Pacto Global da ONU - Rede Brasil" class="logo logo-pg">
+                <i data-feather="plus" class="plus-icon"></i> <!-- Icone Feather -->
+                <img src="https://static.wixstatic.com/media/cf72c4_9288d59f9c4341338ab928ffbfa32bb6~mv2.png/v1/fill/w_382,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logos%20FIEPA.png" alt="Logo FIEPA" class="logo logo-fiepa">
             </div>
             <h1>HUB ODS PARÁ</h1>
-            <h2>Pacto Global da ONU - Rede Brasil e FIEPA unem forças pela Sustentabilidade Regional</h2>
-            <p>Conectando empresas e organizações para acelerar a Agenda 2030 no coração da Amazônia.</p>
+            <h2>Uma Aliança Estratégica pela Sustentabilidade Regional</h2>
+            <p>Conectando o Pará à Agenda 2030 e às oportunidades da bioeconomia, Rumo à COP30.</p>
             <div class="event-date-highlight">
-                <p><strong>Evento de Lançamento:</strong> 29 de Maio de 2025 | 14h30</p>
+                <p><i data-feather="calendar"></i> <strong>Lançamento Oficial:</strong> 29 de Maio de 2025 | 14h30</p>
                 <div id="countdown">
-                    <!-- Contagem regressiva será inserida aqui pelo JS -->
+                    <!-- Contagem regressiva JS -->
                 </div>
             </div>
-            <a href="[PLACEHOLDER_LINK_INSCRICAO_EVENTO]" class="cta-button primary-cta" target="_blank" rel="noopener noreferrer">Inscreva-se para o Lançamento!</a>
-            <a href="#sobre" class="scroll-down">Saiba Mais ↓</a>
+            <a href="[PLACEHOLDER_LINK_INSCRICAO_EVENTO]" class="cta-button primary-cta" target="_blank" rel="noopener noreferrer">
+                <i data-feather="send"></i> Inscreva-se para o Lançamento!
+            </a>
+             <a href="#sobre" class="scroll-down"><i data-feather="arrow-down-circle"></i> Saiba Mais</a>
         </div>
     </header>
 
     <main>
         <section id="sobre" class="section">
             <div class="container">
+                <i data-feather="compass" class="section-icon"></i>
                 <h2>O que é o HUB ODS?</h2>
-                <p>O HUB ODS é o programa do Pacto Global da ONU – Rede Brasil que potencializa o engajamento regional de empresas e organizações para o alcance dos Objetivos de Desenvolvimento Sustentável (ODS) e da Agenda 2030. Uma plataforma para **ação concreta** e colaborativa no seu estado.</p>
-                <p>O Pará se junta a uma rede crescente que já conta com 8 HUBs ativos pelo Brasil, fortalecendo a capilaridade da sustentabilidade corporativa nacional.</p>
-                <!-- Opcional: Mapa ou gráfico mostrando os HUBs -->
+                <p>A plataforma regional do Pacto Global da ONU - Rede Brasil para conectar, capacitar e mobilizar empresas e organizações na jornada pelos Objetivos de Desenvolvimento Sustentável (ODS). Uma rede de **ação local** com impacto global.</p>
+                <p>O Pará se torna o 9º estado a receber um HUB ODS, fortalecendo o ecossistema de sustentabilidade na Amazônia.</p>
+                 <!-- Opcional: Imagem do mapa do Brasil com HUBs -->
+                 <img src="https://www.pactoglobal.org.br/wp-content/uploads/2025/04/color-1.png" alt="Logo HUB ODS" class="logo-hub-section">
             </div>
         </section>
 
         <section id="para-cop30" class="section section-highlight">
-            <div class="container">
-                <h2>Por que o Pará? <br> Bioeconomia, COP30 e o Futuro Sustentável</h2>
-                <p>Sede da COP30 em 2025 e epicentro da bioeconomia amazônica, o Pará vive um momento único. O HUB ODS chega para apoiar as empresas e instituições locais a aproveitarem essas oportunidades, integrando a sustentabilidade como vetor de competitividade, resiliência e impacto positivo.</p>
-                 <img src="[PLACEHOLDER_imagem-bioeconomia-para.jpg]" alt="Ilustração da bioeconomia no Pará" class="section-image">
-            </div>
+             <div class="container">
+                 <i data-feather="anchor" class="section-icon"></i>
+                 <h2>Pará: Protagonismo na Agenda Global</h2>
+                 <p>No centro da bioeconomia amazônica e palco da COP30, o Pará tem a oportunidade única de liderar pelo exemplo. O HUB ODS é a ferramenta para que o setor produtivo e as instituições paraenses se conectem a essa agenda, transformando potencial em **negócios sustentáveis** e impacto real.</p>
+                 <img src="[PLACEHOLDER_imagem-para-cop30-bioeconomia.jpg]" alt="Montagem: Belém + Indústria Sustentável + Floresta" class="section-image large-image">
+             </div>
         </section>
 
         <section id="parceria" class="section">
             <div class="container">
-                <h2>Aliança Estratégica: Pacto Global + FIEPA</h2>
-                <div class="parceria-logos-desc">
-                     <div class="logos-parceria-inline">
-                         <img src="[PLACEHOLDER_logo-pacto-global-rede-brasil.png]" alt="Logo Pacto Global" class="logo-inline">
-                         <img src="[PLACEHOLDER_logo-fiepa.png]" alt="Logo FIEPA" class="logo-inline">
-                     </div>
-                     <p>Unimos a expertise global em sustentabilidade da maior iniciativa da ONU para o setor empresarial com a força, representatividade e conhecimento regional da Federação das Indústrias do Estado do Pará. Uma sinergia poderosa para impulsionar resultados concretos.</p>
-                </div>
+                 <i data-feather="link-2" class="section-icon"></i>
+                 <h2>Aliança Estratégica: Pacto Global + FIEPA</h2>
+                 <p>A expertise global em sustentabilidade corporativa da ONU, aliada à capilaridade e representatividade industrial da FIEPA no Pará.</p>
+                 <div class="parceria-logos-desc">
+                      <div class="logos-parceria-inline">
+                          <img src="https://www.pactoglobal.org.br/wp-content/uploads/2024/03/logo-pacto-color.svg" alt="Logo Pacto Global" class="logo-inline">
+                          <span class="inline-plus">+</span>
+                           <img src="https://static.wixstatic.com/media/cf72c4_9288d59f9c4341338ab928ffbfa32bb6~mv2.png/v1/fill/w_382,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logos%20FIEPA.png" alt="Logo FIEPA" class="logo-inline fiepa-inline">
+                      </div>
+                      <p>Juntos, catalisamos a ação e construímos pontes para um desenvolvimento regional mais justo, próspero e sustentável.</p>
+                 </div>
             </div>
         </section>
 
-        <section id="beneficios" class="section">
+        <section id="beneficios" class="section section-highlight">
             <div class="container">
-                <h2>Valor Estratégico para sua Organização</h2>
+                <i data-feather="gift" class="section-icon"></i>
+                <h2>Valor Estratégico para Sua Organização</h2>
+                <p>Ao integrar o HUB ODS Pará, sua organização acessa:</p>
                 <div class="beneficios-grid">
                     <div class="beneficio-card">
-                        <img src="[PLACEHOLDER_icon-conhecimento.svg]" alt="Ícone Conhecimento">
-                        <h3>Inteligência e Ferramentas ONU/PG</h3>
-                        <p>Acesse conteúdo global adaptado, metodologias e boas práticas.</p>
+                        <i data-feather="book-open" class="beneficio-icon"></i>
+                        <h3>Inteligência ONU/PG</h3>
+                        <p>Conteúdo global, metodologias e ferramentas adaptadas.</p>
                     </div>
                     <div class="beneficio-card">
-                        <img src="[PLACEHOLDER_icon-capacitacao.svg]" alt="Ícone Capacitação">
-                        <h3>Capacitações Aplicadas</h3>
-                        <p>Desenvolva competências em ODS, ESG e sustentabilidade.</p>
+                        <i data-feather="zap" class="beneficio-icon"></i>
+                        <h3>Capacitações</h3>
+                        <p>Workshops e treinamentos aplicados em ODS e ESG.</p>
                     </div>
                     <div class="beneficio-card">
-                        <img src="[PLACEHOLDER_icon-networking.svg]" alt="Ícone Networking">
-                        <h3>Conexões de Alto Nível</h3>
-                        <p>Amplie seu networking com líderes e decisores no Pará.</p>
+                        <i data-feather="users" class="beneficio-icon"></i>
+                        <h3>Networking Qualificado</h3>
+                        <p>Conexão com líderes e decisores do ecossistema paraense.</p>
                     </div>
                     <div class="beneficio-card">
-                        <img src="[PLACEHOLDER_icon-visibilidade.svg]" alt="Ícone Visibilidade">
-                        <h3>Plataforma de Visibilidade</h3>
-                        <p>Posicione sua liderança e compartilhe suas boas práticas.</p>
+                         <i data-feather="trending-up" class="beneficio-icon"></i>
+                        <h3>Visibilidade Positiva</h3>
+                        <p>Plataforma para destacar suas boas práticas e liderança.</p>
                     </div>
                     <div class="beneficio-card">
-                         <img src="[PLACEHOLDER_icon-cadeia-valor.svg]" alt="Ícone Cadeia de Valor">
+                        <i data-feather="share-2" class="beneficio-icon"></i>
                         <h3>Engajamento da Cadeia</h3>
-                        <p>Receba apoio e ferramentas para engajar seus fornecedores.</p>
+                        <p>Apoio e ferramentas para mobilizar seus parceiros.</p>
                     </div>
                      <div class="beneficio-card">
-                         <img src="[PLACEHOLDER_icon-acao-coletiva.svg]" alt="Ícone Ação Coletiva">
-                        <h3>Ação Coletiva</h3>
-                        <p>Participe de projetos e iniciativas conjuntas para maior impacto.</p>
+                         <i data-feather="shield" class="beneficio-icon"></i>
+                        <h3>Gestão de Riscos & Oportunidades</h3>
+                        <p>Alinhe-se às demandas ESG e antecipe tendências.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-         <section id="quem-pode" class="section section-highlight">
+         <section id="quem-pode" class="section">
             <div class="container">
-                <h2>Quem Pode Integrar o HUB ODS Pará?</h2>
-                <p>Um ecossistema aberto e colaborativo!</p>
-                 <p>Empresas (participantes ou não do Pacto Global), Organizações da Sociedade Civil, Associações Setoriais, Instituições de Ensino e Pesquisa, Órgãos Governamentais.</p>
-                <p><strong>A adesão ao HUB ODS é GRATUITA!</strong></p>
-                <p class="disclaimer"><i>*Importante: Integrar o HUB ODS local é uma experiência complementar e não substitui a participação formal e seus benefícios no Pacto Global da ONU - Rede Brasil.</i></p>
+                <i data-feather="user-check" class="section-icon"></i>
+                <h2>Quem Pode Integrar?</h2>
+                 <p>O HUB ODS Pará é um **ecossistema aberto e multissetorial**, unindo forças para a Agenda 2030.</p>
+                <p>✅ Empresas (Participantes ou não do PG-RB)<br> ✅ Organizações da Sociedade Civil<br> ✅ Associações e Sindicatos<br> ✅ Instituições de Ensino e Pesquisa<br> ✅ Órgãos Governamentais</p>
+                <p><span class="gratuito-badge"><i data-feather="dollar-sign"></i> Adesão GRATUITA</span></p>
+                <p class="disclaimer"><i>*A participação no HUB ODS é complementar e não substitui os benefícios e compromissos da participação formal no Pacto Global da ONU - Rede Brasil.</i></p>
             </div>
         </section>
 
-        <section id="evento" class="section">
+        <section id="evento" class="section section-highlight">
             <div class="container">
-                <h2>Evento de Lançamento Oficial</h2>
-                <p>Marque presença no início desta jornada e conecte-se com os protagonistas da sustentabilidade no Pará.</p>
-                <div class="evento-details">
-                    <p>📅 <strong>Data:</strong> 29 de Maio de 2025</p>
-                    <p>🕒 <strong>Horário:</strong> 14h30 às 18h</p>
-                    <p>📍 <strong>Local:</strong> [PLACEHOLDER_NOME_E_ENDERECO_LOCAL], Belém - PA</p> <!-- Inserir local -->
-                    <p><strong>Programação Resumida:</strong></p>
-                    <ul>
-                        <li>14h30: Recepção e Networking</li>
-                        <li>15h00: Abertura Institucional (PG-RB & FIEPA)</li>
-                        <li>15h20: Assinatura Simbólica da Parceria</li>
-                        <li>15h30: Apresentação do HUB ODS Pará</li>
-                        <li>16h00: Talk Show com Empresas Líderes</li>
-                        <li>17h00: Encerramento & Coquetel</li>
-                    </ul>
+                 <i data-feather="navigation" class="section-icon"></i>
+                <h2>Participe do Lançamento Oficial!</h2>
+                <p>Seja parte deste momento inaugural e conecte-se aos pioneiros da sustentabilidade no Pará.</p>
+                <div class="evento-details card-style">
+                     <h3><i data-feather="calendar"></i> 29 de Maio de 2025</h3>
+                     <p><i data-feather="clock"></i> <strong>14h30:</strong> Credenciamento & Welcome Coffee <br>
+                        <strong>15h00:</strong> Abertura Oficial PG-RB & FIEPA <br>
+                        <strong>15h20:</strong> Assinatura da Parceria<br>
+                        <strong>15h30:</strong> Apresentação HUB ODS Pará<br>
+                        <strong>16h00:</strong> Talk Show com Líderes Empresariais<br>
+                        <strong>17h00:</strong> Coquetel de Networking
+                     </p>
+                    <p><i data-feather="map-pin"></i> <strong>Local:</strong> [PLACEHOLDER_NOME_E_ENDERECO_LOCAL], Belém - PA</p> <!-- Inserir local -->
+
+                    <a href="[PLACEHOLDER_LINK_INSCRICAO_EVENTO]" class="cta-button" target="_blank" rel="noopener noreferrer">
+                        <i data-feather="check-circle"></i> Confirmar Presença (Vagas Limitadas)
+                    </a>
                 </div>
-                <a href="[PLACEHOLDER_LINK_INSCRICAO_EVENTO]" class="cta-button" target="_blank" rel="noopener noreferrer">Inscreva-se - Vagas Limitadas!</a>
             </div>
         </section>
 
         <section id="participe" class="section section-cta-final">
              <div class="container">
-                <h2>Faça Parte da Transformação!</h2>
-                <p>Engaje sua organização no HUB ODS Pará e contribua ativamente para um futuro mais sustentável e próspero para o estado e para a Amazônia.</p>
-                <div class="cta-buttons-final">
-                    <a href="[PLACEHOLDER_LINK_INSCRICAO_EVENTO]" class="cta-button primary-cta" target="_blank" rel="noopener noreferrer">Inscrever no Lançamento</a>
-                    <a href="[PLACEHOLDER_LINK_CADASTRO_HUB]" class="cta-button secondary-cta" target="_blank" rel="noopener noreferrer">Quero Aderir ao HUB ODS Pará</a>
-                </div>
+                 <i data-feather="arrow-right-circle" class="section-icon icon-light"></i>
+                 <h2 class="title-light">Faça Parte da Transformação no Pará!</h2>
+                 <p class="text-light">Engaje sua organização no HUB ODS e seja protagonista na construção de um futuro mais sustentável, resiliente e próspero para o estado e a Amazônia.</p>
+                 <div class="cta-buttons-final">
+                    <a href="[PLACEHOLDER_LINK_INSCRICAO_EVENTO]" class="cta-button primary-cta" target="_blank" rel="noopener noreferrer">
+                        <i data-feather="send"></i> Inscrever no Lançamento
+                    </a>
+                    <a href="[PLACEHOLDER_LINK_CADASTRO_HUB]" class="cta-button secondary-cta-light" target="_blank" rel="noopener noreferrer">
+                       <i data-feather="user-plus"></i> Quero Aderir ao HUB ODS Pará
+                    </a>
+                 </div>
             </div>
         </section>
     </main>
@@ -146,19 +200,22 @@
     <footer>
         <div class="container">
             <div class="logos-footer">
-                 <img src="[PLACEHOLDER_logo-pacto-global-rede-brasil-branco.png]" alt="Logo Pacto Global" class="logo-footer">
-                 <img src="[PLACEHOLDER_logo-fiepa-branco.png]" alt="Logo FIEPA" class="logo-footer">
-                 <img src="[PLACEHOLDER_logo-hub-ods-para-branco.png]" alt="Logo HUB ODS Pará" class="logo-footer">
+                 <!-- Usar versões brancas ou negativas dos logos -->
+                 <img src="[PLACEHOLDER_logo-pacto-global-rede-brasil-negativo.svg]" alt="Logo Pacto Global" class="logo-footer">
+                 <img src="[PLACEHOLDER_logo-fiepa-negativo.png]" alt="Logo FIEPA" class="logo-footer">
+                 <img src="[PLACEHOLDER_logo-hub-ods-para-negativo.png]" alt="Logo HUB ODS Pará" class="logo-footer">
             </div>
-            <p>© 2024 Pacto Global da ONU - Rede Brasil & FIEPA. Todos os direitos reservados.</p>
+            <p>© 2024 Pacto Global da ONU - Rede Brasil & Federação das Indústrias do Estado do Pará (FIEPA).</p>
             <p>
-                <a href="https://www.pactoglobal.org.br/" target="_blank" rel="noopener noreferrer">Site Pacto Global</a> |
-                <a href="[PLACEHOLDER_LINK_FIEPA]" target="_blank" rel="noopener noreferrer">Site FIEPA</a>
-                <!-- Adicionar links para política de privacidade se necessário -->
+                <a href="https://www.pactoglobal.org.br/" target="_blank" rel="noopener noreferrer">pactoglobal.org.br</a> |
+                <a href="[PLACEHOLDER_LINK_FIEPA]" target="_blank" rel="noopener noreferrer">fiepa.org.br</a>
             </p>
         </div>
     </footer>
 
+    <script>
+      feather.replace() // Ativa os Feather Icons
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
